@@ -1,0 +1,70 @@
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display:flex;
+    align-items:center;        
+    justify-content: space-between;
+    position:sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #153f54;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.5);
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap; 
+}
+
+.logo {
+    object-fit: scale-down;
+    height: 2rem;
+    width: 15rem;
+    margin-right: 1.5vw;
+}
+
+
+.desktopMenuListItem {
+    margin: 1.5vw;
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+}   
+
+.desktopMenuListItem:hover {
+    color:#41d2d0;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #41d2d0; 
+    transition: color ease-in .25s, border ease-in .1s;
+}
+
+.desktopMenuBtn {
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 150px;
+    margin-left: 1.5vw;
+}
+
+.desktopMenuBtn:hover {
+    box-shadow: 0 0 10px 2px #41d2d0;
+    transition: ease .5s;
+    filter: brightness(90%);
+}
+
+.desktopMenuImg {
+    height: 3.5rem;
+    width: 12rem;
+}
+
+.active {
+    color:#41d2d0;
+}
+
+@media screen and (max-width:480px) {
+    .desktopMenuListItem {
+        margin: 5vw;
+    }
+}

@@ -1,0 +1,214 @@
+#game {
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.unity {
+    position: relative;
+    width: 50vw;
+    height: 40vw;
+    z-index: 0;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, .5);
+    margin-left: 5rem;
+}
+
+.unity:hover {
+    box-shadow: 0 0 10px 10px rgba(65, 210, 208, .5);
+}
+
+.title {
+    color: #41d2d0;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-left: 5rem;
+}
+
+.descsection {
+    box-shadow: 0 0 20px 10px rgba(65, 210, 208, .5);
+    background: rgb(21, 63, 84);    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 5rem 1rem;
+    padding: 1rem 1rem;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.desctitle {
+    color: #41d2d0;
+    font-size: 1.75rem;
+    margin-top: 1rem;
+}
+
+
+.horizontal {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 3rem;
+    align-items: center;
+}
+
+.verticalimages {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-left: 2rem;
+    z-index: 1;
+}
+
+.desctext {
+    width: 45%;
+    font-size: 1.25rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.link {
+    color: #41d2d0;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.a {
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .5);
+    border-radius: .5rem;   
+    width: 25rem;
+}
+
+.b {
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, .5);
+    border-radius: .5rem;   
+    width: 25rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+@media screen and (max-width: 1418px) {
+    .title {
+        font-size: 3rem;
+        margin-left: 3rem;
+    }
+
+    .unity {
+        width: 45vw;
+        height: 36vw;
+        margin-left: 3rem;
+    }
+
+    .descsection {
+        width: 80%;
+        margin: 4rem 1rem;
+        padding: 1rem;
+    }
+
+    .desctitle {
+        font-size: 1.5rem;
+    }
+
+    .desctext {
+        font-size: 1.1rem;
+        margin-right: 1rem;
+    }
+
+    .verticalimages {
+        width: 50%;
+        margin-left: 1rem;
+    }
+
+    .a, .b {
+        width: 22rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 2.5rem;
+        margin-left: 2rem;
+    }
+
+    .unity {
+        width: 40vw;
+        height: 32vw;
+        margin-left: 2rem;
+    }
+
+    .descsection {
+        width: 90%;
+        margin: 3rem 1rem;
+        padding: 0.5rem;
+    }
+
+    .desctitle {
+        font-size: 1.25rem;
+    }
+
+    .desctext {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+    .verticalimages {
+        width: 55%;
+        margin-left: 0.5rem;
+    }
+
+    .a, .b {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .horizontal {
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+
+    .unity {
+        width: 80vw;
+        height: 64vw;
+        margin-left: 0;
+        margin-bottom: 3rem;
+    }
+
+    .descsection {
+        width: 100%;
+        margin: 2rem .5rem;
+        padding: 1rem;
+    }
+
+    .desctitle {
+        font-size: 1.5rem; 
+    }
+
+    .desctext {
+        font-size: 0.9rem;
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .verticalimages {
+        width: 100%;
+        margin-left: 0;
+        margin-top: -3rem;
+    }
+
+    .a, .b {
+        width: 18rem;
+        margin: 2rem auto;
+    }
+}

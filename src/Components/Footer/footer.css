@@ -1,0 +1,30 @@
+.footer {
+    margin-top: 1rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    font-size: small;
+    justify-content: space-between;
+    height: 4rem;
+    background: rgb(6, 30, 55);
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.5); 
+    font-weight: 300;
+}
+
+.footer>p {
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.imgs>a>img {
+    object-fit: cover;
+    margin-right: 1.5rem;
+    height: 2rem;   
+}
+
+@media screen and (max-width:480px) {
+    .imgs>a>img {
+        height: 1rem;
+        width: 1rem;
+    }
+}

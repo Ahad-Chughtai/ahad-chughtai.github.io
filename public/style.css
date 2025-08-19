@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    background: transparent;
+    font-family: 'Roboto+Slab', sans-serif;
+}
+
+body 
+{
+    color: white;
+    background: linear-gradient(to left top, #224c62, #113141);
+    background-attachment: fixed; /*edit*/
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+canvas {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index: -3;
+}

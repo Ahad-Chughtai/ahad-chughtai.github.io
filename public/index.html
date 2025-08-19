@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ahad Chughtai Career Portfolio"/>
+    <title>Ahad Chughtai Portfolio</title>
+    <link rel="icon" href="./icon1.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>  
+    <canvas id="c" height="791" width="1536">
+      <script>
+        // geting canvas by id c
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+  
+        //making the canvas full screen
+        c.height = window.innerHeight;
+        c.width = window.innerWidth;
+  
+        var matrix = "`1234567890-=!@#$%^&*()_+qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOPASDFGHJKLZXCVBNM<>?;'\"\\|~";
+        matrix = matrix.split("");
+  
+        var font_size = 10;
+        var columns = c.width/font_size; 
+        var drops = [];
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1; 
+        function draw()
+        {
+          // Create a Gradient
+          const grd = ctx.createLinearGradient(0, 0, c.width, c.height);
+          grd.addColorStop(0, "rgba(37, 79, 100, .015)");
+          grd.addColorStop(0.2, "rgba(21, 63, 84, .04)");
+          grd.addColorStop(1, "rgba(0, 0, 0, .04)");
+
+          // Draw a filled Rectangle
+          ctx.fillStyle = grd;
+          ctx.fillRect(0, 0, c.width, c.height);
+
+          ctx.fillStyle = "#000"; 
+          ctx.font = font_size + "px arial";
+          for(var i = 0; i < drops.length; i++)
+          {
+              var text = matrix[Math.floor(Math.random()*matrix.length)];
+              ctx.fillText(text, i*font_size, drops[i]*font_size);
+              if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                  drops[i] = 0;
+              drops[i]++;
+          }
+        } 
+      setInterval(draw, 35);
+      </script>  
+  </body>
+</html>

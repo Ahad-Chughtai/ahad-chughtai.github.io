@@ -1,0 +1,151 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    
+    font-size: 60px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+
+    width: 15rem;
+    height: 5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: #1f3540;
+    font-size: 26px;
+    color: #41d2d0;
+    font-weight: 700;
+}
+
+.board{
+    height: 33rem;
+    width: 33rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.boxes{
+    display: flex;
+    height: 11rem;
+    width: 11rem;
+    background: #1f3540;
+    border: 5px solid #0f1b21;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.boxes img{
+    margin: auto;
+}
+
+.title img{
+    padding-left: 20px;
+    padding-top: 15px;
+    height: 5rem;
+}
+
+@media screen and (max-width:560px) {
+    .title {
+        margin-bottom: 1rem;
+        transform: scale(.9);
+    }
+
+    .reset {
+        margin-top: 1rem;
+        transform: scale(.9);
+
+    }
+
+    .board {
+        transform: scale(.9);
+
+    }
+}
+
+
+@media screen and (max-width:520px) {
+    .title {
+        margin-bottom: -2rem;
+        transform: scale(.8);
+    }
+
+    .reset {
+        margin-top: -1rem;
+        transform: scale(.8);
+    }
+
+    .board {
+        transform: scale(.8);
+
+    }
+}
+
+
+
+@media screen and (max-width:500px) {
+    .title {
+        margin-bottom: -3rem;
+        transform: scale(.7);
+    }
+
+    .reset {
+        margin-top: -2rem;
+        transform: scale(.7);
+    }
+
+    .board {
+        transform: scale(.7);
+
+    }
+}
+
+@media screen and (max-width:480px) {
+    .title {
+        margin-bottom: -5rem;
+        transform: scale(.6);
+    }
+
+    .reset {
+        margin-top: -5rem;
+        transform: scale(.6);
+    }
+
+    .board {
+        transform: scale(.6);
+        margin-left: -2.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .title {
+        margin-bottom: -5rem;
+        transform: scale(.6);
+    }
+
+    .reset {
+        margin-top: -5rem;
+        transform: scale(.6);
+    }
+
+    .board {
+        transform: scale(.6);
+        margin-left: -4rem;
+    }
+}
