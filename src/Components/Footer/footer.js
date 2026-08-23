@@ -8,7 +8,7 @@ const Footer = () => {
     <footer className='footer'>
         <p>Copyright © 2024 Ahad Chughtai | All Rights Reserved.</p>
         <div className='imgs'>
-            <a href="mailto:ahadchughtai007@gmail.com"><img src={Mail} alt="Email"></img></a>
+            <a href="mailto:ahadchughtai007@gmail.com" target="_blank" rel="noreferrer"><img src={Mail} alt="Email"></img></a>
             <a target="_blank" href="https://www.linkedin.com/in/ahad-chughtai/"><img src={LinkedIn} alt="LinkedIn"></img></a>
         </div>
     </footer>

@@ -13,7 +13,7 @@ const Navbar = () => {
         <NavLink activeClassName="active" to="/ComputerScience" className="desktopMenuListItem">Computer Science</NavLink>
         <NavLink activeClassName="active" to="/3DModeling" className="desktopMenuListItem">3D Modeling</NavLink>
       </div>
-      <a className="desktopMenuBtn" href="mailto:ahadchughtai007@gmail.com">
+      <a className="desktopMenuBtn" href="mailto:ahadchughtai007@gmail.com" target="_blank" rel="noreferrer">
         <img src={contactImg} alt="Contact Me" className="desktopMenuImg" />
       </a>
     </nav>
