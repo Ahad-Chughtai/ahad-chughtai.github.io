@@ -16,9 +16,9 @@ const Intro = () => {
                   I'm <span className="introName">Ahad Chughtai</span>
               </span>
               <div className="introPara">
-                <p className='introParaText'>I am studying Electrical Engineering as a sophomore at Texas A&M</p>
+                <p className='introParaText'>I am studying Electrical Engineering as a junior at Texas A&M</p>
                 <p className='introParaText'>This portfolio showcases my projects & experience in Computer Science</p>
-                <p className='introParaText'>& 3D Modeling</p>
+                <p className='introParaText'>Electrical Engineering, & 3D Modeling</p>
               </div>
           </div>
           <img src={bg} alt="Profile" className="bg" />
